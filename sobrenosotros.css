@@ -1,0 +1,157 @@
+/* Estilos Generales */
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient( #800080, #1a1a1a);
+    background-attachment: fixed; /* Evita que el fondo se repita al hacer scroll */
+}
+/* Navegación */
+nav {
+    background:linear-gradient(#b86614 110%, #000000 150%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .05rem solid #222;
+}
+
+nav h1 {
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.nav-imagen {
+    width: 200px;
+}
+
+.contenedor-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 1rem;
+}
+
+.nav-vinculo {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.nav-vinculo:hover {
+    color: #e4b970;
+}
+
+/* Botón Iniciar Sesión */
+.iniciarsesion-boton {
+    border: none;
+    outline: none;
+    width: auto;
+    height: 2.5rem;
+    background-color: orange;
+    color: #222;
+    font-size: 1rem;
+    cursor: pointer; /* Añadido para mejor UX */
+}
+
+.iniciarsesion-boton:hover {
+    background-color: #ffa931;
+    transform: scale(1.02); /* Corregido el valor de scale */
+}
+
+/* Media Queries para Escritorio */
+@media screen and (min-width: 1200px) {
+    body{
+        background: radial-gradient(circle, #660066 20%, #000 150%);
+    }
+    nav {
+        flex-direction: row;
+    }
+
+    .contenedor-links {
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .iniciarsesion-boton {
+        margin-right: 1rem;
+    }
+
+    .nav-imagen {
+        margin-top: 0rem;
+    }
+
+    .slider-box {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .historia-container{
+        padding: 1rem 6rem;
+    }
+    .footerr-redesSociales{
+        margin-left: 0;
+    }
+}
+/* MAIN */
+.historia-container{
+    padding: 1rem 1rem;
+    height: auto;
+    padding-bottom: 2rem;
+}
+.historia-container h1{
+    color: antiquewhite;
+    text-decoration: underline 4px;
+    margin:0;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.historia{
+    font-weight: normal;
+    line-height: 1.8rem;
+    text-align: justify;
+    font-size: 1.4rem;
+    color: antiquewhite;
+    margin: 0rem;
+    
+}
+.historiah2{
+    text-decoration: underline 1px;
+    color: antiquewhite;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+/*FOOTER*/
+.footerr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+    font-size: 1.3rem;
+    min-height:3rem;
+    background: linear-gradient(#000, #b86614 2%);
+    margin-top: auto;
+}
+.footerr-redesSociales{
+    margin-left: 1rem;
+}
+.footerr-redesSociales a{
+    color: #000;
+    text-decoration: none;
+}
+.footerr-redesSociales a:first-child{
+    margin-right: .5rem;
+}
+.footerr-derechos{
+   text-align: center;
+}
+
+
