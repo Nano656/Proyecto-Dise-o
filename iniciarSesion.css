@@ -1,0 +1,89 @@
+body{
+    background: radial-gradient(circle, #660066 50%, #4b004b 150%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.logo{
+    margin: 0 auto;
+    max-width: 90%;
+}
+h1{
+    color: #fff; 
+    text-align: center;
+    display: block;
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.formulario-container{
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #444;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.formulario-container button{
+    margin: 0 auto 10px;
+}
+.formulario-container label:first-child{
+    margin-top: 1rem;
+}
+.formulario-container input{
+    align-items: center;
+    font-size: 1.2rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    height: 2rem;
+    outline: none;
+    color: #fff;
+}
+
+.button{
+    font-size: 1rem;
+    width: 85%;
+    min-height: 2rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+.button:hover{
+    border: none;
+    outline: none;
+    background-color: #e0e0e0;
+    transform: scale(103%);
+    cursor: pointer;
+}
+
+@media screen and (min-width:1200px) {
+    body{
+        justify-content:stretch ;
+    }
+    .logo{
+        width:25%;
+        margin-top: 2rem;
+    }
+    .formulario-container{
+        width: 35%;
+        margin: 0 auto;
+    }
+    .formulario-container input{
+        width: 80%;
+    }    
+     .button{
+       width: 30%;
+    }
+        
+}
